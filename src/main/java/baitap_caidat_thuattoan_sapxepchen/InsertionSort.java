@@ -7,13 +7,18 @@ public class InsertionSort {
     static void insertionSort(double[] arr) {
 
         for (int i = 1; i < arr.length; i++) {
-            for (int j = i; j > 0; j--) {
-                if (arr[j - 1] > arr[j]) {
-                    double temp = arr[j - 1];
-                    arr[j - 1] = arr[j];
-                    arr[j] = temp;
+            double temp = arr[i];
+            int j = i;
+            while (j > 0) {
+                if (arr[j - 1] > temp) {
+                    arr[j] = arr[j - 1];
+                    j--;
+                } else {
+                    break;
                 }
             }
+            System.out.println(j);
+            arr[j] = temp;
         }
     }
 
