@@ -1,7 +1,7 @@
 package baitap_minhhoathuatoan_sapxepchen;
 
 public class InsertionSort {
-    static int[] aray = {1, 5, 9, 6, 2, 4, 10, 15, 3};
+    static int[] aray = {1, 5, 9, 6, 2, 4, 10, 15, 3, 15};
 
     static void insertionSort(int[] aray) {
         for (int i = 1; i < aray.length; i++) {
